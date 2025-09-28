@@ -1,1 +1,0 @@
-aaj ka hisaab = 1200
