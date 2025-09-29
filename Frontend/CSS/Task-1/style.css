@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #140347;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 30px;
+  margin: 5px;
+  padding: 15px;
+  font-weight: 700;
+}
+
+#head p {
+  font-size: 15px;
+  margin: 5px;
+  margin-bottom: 5px;
+  padding: 0 15px 15px 15px;
+}
+section {
+  margin: 50px;
+}
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+p {
+  font-size: 10px;
+}
+
+#about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+#education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #a9fffb;
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+#skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffd18d;
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dda9ff;
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #a9ffb5;
+  padding: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+#block {
+  background-color: white;
+  padding: 5px;
+  margin: 2px;
+  width: 90%;
+  font-family: "Poppins", sans-serif;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  background-color: rgb(0, 0, 68);
+  color: white;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+#skills #block p {
+  text-transform: uppercase;
+}
