@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #2c2c2c;
+    background-color: rgb(245, 253, 255);
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+a {
+    text-decoration: none;
+    font: 25px;
+    margin-right: 20px;
+}
+#navleft {
+    margin-left: 25px;
+}
+
+#nav {
+    padding: 10px 30px;
+    margin-top: 25px;
+}
+
+#main #hero h1 {
+    font-size: 350px;
+    padding-left: 70px;
+    font-weight: 400;
+}
+
+#btmleft {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+
+    width: 300px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#btmleft h3 {
+    font-size: 20px;;
+}
+
+#btmleft p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+#nav h4 {
+    font-family: "Amarante", sans-serif;
+    font-size: 30px;
+}
+
+#btmleft a {
+    font-family: "Pinyon Script", sans-serif;
+    font-size: 40px;
+}
+
+
+#first {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    z-index: 3;
+    height: 400px;
+}
+
+#second {
+    position: absolute;
+    top: 60%;
+    right: 28%;
+    z-index: 2;
+    height: 300px;
+}
+
+#third {
+    position: absolute;
+    top: 50%;
+    right: 48%;
+    z-index: 1;
+    height: 300px;
+}
+
+#btmright {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#btmright a {
+    margin-right: 5px;
+    font-size: 20px;
+    text-decoration: underline;
+}
