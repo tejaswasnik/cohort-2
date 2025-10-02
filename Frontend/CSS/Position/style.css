@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+#car1 {
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+#car2 {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background-color: green;
+}
+#car3 {
+    height: 200px;
+    width: 300px;
+    background-color: blue;
+}
+
+#Hello {
+    position: absolute;
+    width: 50px;
+    top: 40%;
+    left: 35%;
+    background-color: yellow;
+    height: 50px;
+}
