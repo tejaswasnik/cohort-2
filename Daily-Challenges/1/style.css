@@ -1,0 +1,178 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#logo img {
+  height: 25px;
+  margin-left: 5px;
+}
+
+#logo {
+  display: flex;
+  padding: 20px;
+  font-size: 25px;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#links svg {
+    font-size: 5px;
+}
+
+#links a {
+    padding: 20px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #a8cde6 0%, #f5d5b3 100%);
+}
+
+#clean {
+  color: black;
+}
+
+#pro {
+  color: white;
+}
+
+#logo i {
+  color: white;
+}
+
+#nav {
+  padding: 20px 30px;
+  color: black;
+}
+
+#nav #dwnbtn button {
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: none;
+}
+
+#hero img {
+  height: 800px;
+}
+
+.shirt-container {
+  display: flex;
+  justify-content: center;
+}
+
+#hero h1 {
+  font-size: 130px;
+  color: white;
+  line-height: 110px;
+  font-weight: 400;
+}
+
+#heading {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+#left-container {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  padding: 20px;
+  display: flex;flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.911);
+  border-radius: 20px;
+  text-align: center;
+}
+
+#left-container h3 {
+  font-size: 50px;
+}
+
+#shirt-container {
+  position: absolute;
+}
+
+#left-container img {
+  height: 150px;
+}
+
+#heading i {
+  font-size: 40px;
+  color: yellow;
+}
+.shirt {
+  z-index: 98;
+}
+
+#wardrobe {
+  position: absolute;
+  z-index: 99;
+}
+
+footer img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 20%;
+  margin-top: 25px;
+}
+
+footer {
+  background-color: #1D2A2E;
+  height: auto;
+}
+
+#btmcontainer button {
+  padding: 10px 40px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#btmcontainer {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#btmimages {
+  display: flex;
+  color: white;
+  position: relative;
+  font-size: 25px;
+}
+
+#btmimages h4 {
+margin: 10px;
+position: absolute;
+left: 100%;
+top: 30%;
+}
