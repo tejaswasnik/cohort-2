@@ -1,0 +1,93 @@
+@font-face {
+    font-family: apple-thin;
+    src: url(/Frontend/CSS/Task-4/Fonts/FontsFree-Net-SFProDisplay-Thin.ttf);
+}
+
+@font-face {
+    font-family: apple-regular;
+    src: url(/Frontend/CSS/Task-4/Fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: #333;
+    color: white;
+    gap: 20px;
+    font-size: 14px;
+}
+
+#nav h4 {
+    font-family: apple-thin;
+    margin: 10px;
+}
+
+#hero {
+    background-image: url(/Frontend/CSS/Task-4/Images/hero_iphone_17_pro__bknyzxfk2agi_large.jpg);
+    background-position: center;
+    height: 875px;
+    background-size: cover;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#hero h2 {
+    position: absolute;
+    top: 5%;
+    color: white;
+    font-size: 50px;
+    font-family: apple-regular;
+
+}
+
+#hero h3 {
+    position: absolute;
+    top: 12%;
+    color: white;
+    font-size: 20px;
+    font-family: apple-regular;
+
+}
+
+#learn-more {
+    padding: 10px 20px;
+    background-color: #0077ED;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-family: apple-regular;
+    font-size: 15px;
+}
+
+#buy {
+    padding: 10px 20px;
+    background: none;
+    color: #0077ED;
+    border: 2px solid #0077ED;
+    border-radius: 30px;
+    font-family: apple-regular;
+    margin: 4px 5px;
+    font-size: 15px;
+}
+
+#hero-btns {
+    position: absolute;
+    top: 17%;
+}
