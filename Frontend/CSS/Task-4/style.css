@@ -38,7 +38,7 @@ html, body {
 #hero {
     background-image: url(/Frontend/CSS/Task-4/Images/hero_iphone_17_pro__bknyzxfk2agi_large.jpg);
     background-position: center;
-    height: 875px;
+    height: 100%;
     background-size: cover;
     flex-direction: column;
     background-repeat: no-repeat;
@@ -59,10 +59,10 @@ html, body {
 
 #hero h3 {
     position: absolute;
-    top: 12%;
+    top: 17%;
     color: white;
     font-size: 20px;
-    font-family: apple-regular;
+    font-family: apple-thin;
 
 }
 
@@ -89,5 +89,79 @@ html, body {
 
 #hero-btns {
     position: absolute;
-    top: 17%;
+    top: 22%;
+}
+
+section{
+    height: 80%;
+}
+
+#iphone-air {
+    height: 100%;
+    background-image: url(/Frontend/CSS/Task-4/Images/hero_iphone_air__0gxyavihpiqu_large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+#iphone-air h2 {
+    font-family: apple-regular;
+    font-size: 50px;
+}
+
+#iphone-air h3 {
+    font-family: apple-thin;
+    font-size: 30px;
+}
+
+#iphone-air #hero-btns-iphone-air #learn-more {
+    padding: 10px 20px;
+    background-color: #0077ED;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-family: apple-regular;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+#iphone-17 {
+    height: 100%;
+    background-image: url(/Frontend/CSS/Task-4/Images/hero_iphone_17__c5vvimu9a20y_large.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+#iphone-17 h2 {
+    font-family: apple-regular;
+    font-size: 50px;
+}
+
+#iphone-17 h3 {
+    font-family: apple-thin;
+    font-size: 35px;
+}
+
+#iphone-17 #hero-btns-iphone-17 #learn-more {
+    padding: 10px 20px;
+    background-color: #0077ED;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-family: apple-regular;
+    font-size: 15px;
+    margin-top: 20px;
 }
