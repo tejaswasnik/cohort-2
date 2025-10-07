@@ -59,7 +59,7 @@ html, body {
 
 #hero h3 {
     position: absolute;
-    top: 17%;
+    top: 13%;
     color: white;
     font-size: 20px;
     font-family: apple-thin;
@@ -89,11 +89,12 @@ html, body {
 
 #hero-btns {
     position: absolute;
-    top: 22%;
+    top: 17%;
 }
 
 section{
     height: 80%;
+    width: 100%;
 }
 
 #iphone-air {
@@ -164,4 +165,141 @@ section{
     font-family: apple-regular;
     font-size: 15px;
     margin-top: 20px;
+}
+
+
+#container1, #container2, #container3 {
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+
+.icloud, .games, .airpods, .ipad, .trade, .card {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    border: 5px solid white;
+}
+
+.icloud {
+    background-image: url(/Frontend/CSS/Task-4/Images/promo_icloud_plus__d4639vh3tz2a_large.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.games {
+    background-image: url(/Frontend/CSS/Task-4/Images/promo_apple_games__bfy0db0xi602_large.jpg);
+        background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+        display: flex;
+    justify-content: flex-start;
+}
+
+.airpods {
+    background-image: url(/Frontend/CSS/Task-4/Images/promo_airpodspro_3__f6xmza7bglei_large.jpg);
+            background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+        display: flex;
+    justify-content: flex-start;
+}
+
+.ipad {
+    background-image: url(/Frontend/CSS/Task-4/Images/promo_ipad_air_avail__6i02t7nujr62_large.jpg);
+            background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+        display: flex;
+    justify-content: flex-start;
+}
+
+.trade {
+    background-image: url(/Frontend/CSS/Task-4/Images/promo_iphone_tradein__bugw15ka691e_large.jpg);
+            background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+        display: flex;
+    justify-content: flex-start;
+}
+
+.card {
+    background-image: url(/Frontend/CSS/Task-4/Images/promo_apple_card__5cm7draujpey_large.jpg);
+            background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+        display: flex;
+    justify-content: flex-start;
+}
+
+.icloud h2 {
+    font-size: 50px;
+    font-family: apple-regular;
+}
+
+.icloud h3 {
+    font-size: 20px;
+    font-family: apple-thin;
+    margin: 10px;
+}
+
+
+.games img {
+    width: 175px;
+}
+
+.games h3 {
+    font-size: 20px;
+    font-family: apple-thin;
+    margin: 10px;
+    color: white;
+}
+
+.airpods h2 {
+    font-size: 50px;
+    font-family: apple-regular;
+}
+
+.airpods h3 {
+    font-size: 20px;
+    font-family: apple-thin;
+    margin: 10px;
+}
+
+.ipad img {
+    width: 175px;
+}
+
+.ipad h3 {
+    font-size: 20px;
+    font-family: apple-thin;
+    margin: 10px;
+}
+
+.card img {
+    width: 100px;
+}
+
+.card h3 {
+    font-size: 20px;
+    font-family: apple-thin;
+    margin: 10px;
+}
+
+.trade img {
+    width: 175px;
+}
+
+.trade h3 {
+    font-size: 20px;
+    font-family: apple-thin;
+    margin: 20px;
 }
