@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+}
+#nav {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+#nav #left {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-family: "Mona Sans";
+}
+.tab p {
+  text-align: center;
+}
+
+.tab {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px;
+  font-weight: 500;
+}
+
+#nav #right {
+  display: flex;
+}
+
+#nav #logo svg {
+  width: 90px;
+  margin-right: 20px;
+}
+
+#signup {
+  padding: 10px 20px;
+  background: transparent;
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#login {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 700;
+}
