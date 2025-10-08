@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -72,4 +71,125 @@ body {
   border-radius: 30px;
   font-size: 15px;
   font-weight: 700;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hero #left {
+  padding: 50px;
+  font-family: "Mona Sans";
+  width: 100%;
+}
+
+#hero #right {
+  padding: 50px;
+}
+
+#hero #right video {
+  width: 600px;
+  border-radius: 30px;
+}
+
+#hero #left h1 {
+  font-size: 60px;
+  font-family: "mona sans";
+  margin-bottom: 10px;
+}
+
+#tagline {
+  font-family: "mona sans";
+  margin-bottom: 20px;
+}
+
+#tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 10px;
+}
+
+.pill {
+  display: flex;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 40px; 
+  font-size: 15px;
+}
+
+.pill-active {
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar-container {
+    display: flex;
+    width: 600px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    width: 80%;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    padding: 0 25px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    background-color: transparent;
+}
+
+.search-input::placeholder {
+    color: #a0a0a0;
+    font-size: 16px;
+}
+
+
+.search-button {
+    background-color: #ff69b4; 
+    border: none;
+    width: 60px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 40px; 
+    border-bottom-right-radius: 40px;
+    transition: background-color 0.2s;
+}
+
+.search-button:hover {
+    background-color: #e65a9e;
+}
+
+.search-button i {
+    color: white;
+    font-size: 20px;
+}
+
+#popular {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.keyword {
+  border: 0.5px solid grey;
+  padding: 5px 10px;
 }
