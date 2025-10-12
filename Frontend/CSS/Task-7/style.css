@@ -89,7 +89,7 @@ main {
 #bottom {
   background-color: pink;
   grid-area: bottom;
-  background-image: url(images/Frame.png);
+  background-image: url(images/Frame\ \(1\).png);
   background-position: center;
   background-size: cover;
 }
