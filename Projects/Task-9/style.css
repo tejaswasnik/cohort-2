@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section {
+  height: 100%;
+  width: 25%;
+  flex: 1;
+  transition: all 0.75s ease 0s;
+}
+main section:hover {
+  flex-grow: 3;
+}
+main section:nth-child(1) {
+  background-image: url(https://image.tmdb.org/t/p/original/9C2Ohb1H5FDDM2z4PZXrQnXolEU.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section:nth-child(2) {
+  background-image: url(https://image.tmdb.org/t/p/original/1MGUY0TE4JIiwCKc9IeSmdKkIPs.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section:nth-child(4) {
+  background-image: url(https://image.tmdb.org/t/p/original/zzuFDhbI7Ngt7E6M0nsobx0SohH.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section:nth-child(5) {
+  background-image: url(https://image.tmdb.org/t/p/original/pGXhq6560TSoPHisREv1hDg1Sn.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section:nth-child(3) {
+  background-image: url(https://image.tmdb.org/t/p/original/6vTQZmHplnfc10hEXv1PsTiCz54.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section:nth-child(1) img {
+  width: 200px;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
+}
+main section:nth-child(2) img {
+  width: 150px;
+}
+main section:nth-child(3) img {
+  width: 200px;
+}
+main section:nth-child(4) img {
+  width: 200px;
+}
+main section:nth-child(5) img {
+  width: 200px;
+}/*# sourceMappingURL=style.css.map */
