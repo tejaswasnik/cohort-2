@@ -14,7 +14,7 @@ This comprehensive program is designed to transform a beginner into a job-ready 
 | **Provider** | [Sheryians Coding School](https://www.sheryians.com/courses/courses-details/2.0%20Job%20Ready%20AI%20Powered%20Cohort:%20Web%20+%20DSA%20+%20Aptitude) |
 | **Duration/Content** | 250+ Hours of Live & Recorded Content |
 | **Focus Stack** | **MERN** (MongoDB, Express.js, React, Node.js) |
-| **Status** | 🟢 **In Progress** / **Completed** *(Choose one)* |
+| **Status** | 🟢 **In Progress** |
 
 ---
 
@@ -188,10 +188,8 @@ You need the following software installed on your machine:
 
 | Platform | Handle/Link |
 | :--- | :--- |
-| **GitHub** | [Your GitHub Profile URL](https://github.com/YourUsername) |
-| **LinkedIn** | [Your LinkedIn Profile URL](https://linkedin.com/in/YourProfile) |
-| **Personal Site** | [Your Portfolio/Website URL (Optional)]() |
-
+| **GitHub** | [Your GitHub Profile URL](https://github.com/tejaswasnik) |
+| **LinkedIn** | [Your LinkedIn Profile URL](https://linkedin.com/in/tejaswasnik) |
 ---
 
 ## 📄 License
