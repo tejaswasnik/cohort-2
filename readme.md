@@ -188,8 +188,8 @@ You need the following software installed on your machine:
 
 | Platform | Handle/Link |
 | :--- | :--- |
-| **GitHub** | [Your GitHub Profile URL](https://github.com/tejaswasnik) |
-| **LinkedIn** | [Your LinkedIn Profile URL](https://linkedin.com/in/tejaswasnik) |
+| **GitHub** | [Tejas Wasnik](https://github.com/tejaswasnik) |
+| **LinkedIn** | [Tejas Wasnik](https://linkedin.com/in/tejaswasnik) |
 ---
 
 ## 📄 License
