@@ -194,6 +194,6 @@ You need the following software installed on your machine:
 
 ## 📄 License
 
-This repository is for educational purposes only. The code is owned by the developer (`@YourUsername`) and based on the curriculum provided by Sheryians Coding School.
+This repository is for educational purposes only. The code is owned by the developer (`@tejaswasnik`) and based on the curriculum provided by Sheryians Coding School.
 
 Feel free to explore, fork, and learn from the code!
