@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    grid-template-areas:
+    "vertical vertical horizontal horizontal horizontal "
+    "vertical vertical horizontal horizontal horizontal "
+    "vertical vertical box-1 box-2 box-3";
+    padding: 2rem;
+    background-color: rgb(53, 17, 17);
+}
+
+#vertical {
+    grid-area: vertical;
+    background-image: url(https://images.unsplash.com/photo-1760662018512-e881f06d0fe0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.384);
+}
+
+#horizontal {
+    grid-area: horizontal;
+    background-image: url(https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.384);
+}
+#box-1 {
+    grid-area: box-1;
+    background-image: url(https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.384);
+}
+#box-2 {
+    grid-area: box-2;
+    background-image: url(https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1961);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.384);
+}
+#box-3 {
+    grid-area: box-3;
+    background-image: url(https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.384);
+}
