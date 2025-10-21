@@ -46,10 +46,13 @@ html {
 
 body {
   background-color: #121212;
+  display: flex;
+  justify-content: center;
 }
 
 main {
   max-width: 2000px;
+  align-items: center;
 }
 
 .label {

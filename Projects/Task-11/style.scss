@@ -50,6 +50,8 @@ html {
 
 body {
   background-color: #121212;
+  display: flex;
+  justify-content: center;
 }
 
 @mixin flexColumn($gap: 0rem) {
@@ -60,6 +62,7 @@ body {
 
 main {
   max-width: 2000px;
+  align-items: center;
 }
 
 .label {
