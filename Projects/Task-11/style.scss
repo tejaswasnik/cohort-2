@@ -1,7 +1,38 @@
+@font-face {
+  font-family: roboto;
+  src: url(fonts/Roboto-mono/RobotoMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: chillax;
+  src: url(fonts/chillax/Chillax-Regular.otf);
+}
+
+@font-face {
+  font-family: satoshi;
+  src: url(fonts/satoshi/Satoshi-Light.otf);
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: chillax;
+}
+
+section p {
+  font-family: satoshi;
+}
+
+.card .bottom h2 {
+  font-family: chillax;
+}
+
+.card .bottom progress {
+  font-family: chillax;
 }
 
 html,
@@ -18,7 +49,7 @@ html {
 }
 
 body {
-  background-color: rgb(29, 29, 29);
+  background-color: #121212;
 }
 
 @mixin flexColumn($gap: 0rem) {
@@ -27,8 +58,13 @@ body {
   gap: $gap;
 }
 
-section {
-    max-width: 2000px;
+main {
+  max-width: 2000px;
+}
+
+.label {
+  text-transform: uppercase;
+  font-family: roboto;
 }
 
 main {
@@ -36,7 +72,7 @@ main {
   @include flexColumn(0rem);
   align-items: center;
 
-  section {
+  .view1 {
     width: 100%;
     @include flexColumn(1rem);
     padding: 1rem;
@@ -51,7 +87,7 @@ main {
       }
     }
     .bottom {
-      background-color: #292929;
+      background-color: #1e1e1e;
       @include flexColumn(3rem);
       padding: 1.5rem;
       border-radius: 0.7rem;
@@ -71,18 +107,335 @@ main {
         }
         button {
           width: fit-content;
+          display: flex;
+          align-items: center;
+          padding: 1.2rem 1rem;
+          gap: 1rem;
+          background: none;
+          color: white;
           border: none;
+          font-family: roboto;
           outline: none;
-          padding: 0.7rem 1rem;
-          border-radius: 0.5rem;
+
+          i {
+            background-color: #292929;
+            border: 0.1rem solid rgba(255, 255, 255, 0.712);
+            border-radius: 50%;
+            padding: 0.2rem;
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.678);
+            outline: none;
+          }
         }
       }
     }
   }
-  @media (min-width: 900px) {
-    section {
+
+  .view2 {
+    width: 100%;
+    padding: 1rem;
+
+    .top,
+    .bottom {
+      display: flex;
+      justify-content: center;
+
+      .element {
+        @include flexColumn(0.5rem);
+        padding: 1rem 4rem;
+        text-align: center;
+
+        small {
+          opacity: 0.6;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  .view3 {
+    width: 100%;
+    @include flexColumn(1rem);
+    padding: 1rem;
+
+    .bottom {
+      width: 100%;
+
+      p {
+        text-transform: uppercase;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.7rem;
+      }
+    }
+    .top {
+      background-color: #1e1e1e;
+      @include flexColumn(3rem);
+      padding: 2rem;
+      justify-content: space-between;
+      border-radius: 0.7rem;
+      .text {
+        @include flexColumn(0.7rem);
+
+        h1 {
+          font-weight: 200;
+          font-size: 2.8rem;
+          text-transform: uppercase;
+        }
+        p {
+          font-weight: 100;
+          opacity: 0.6;
+          line-height: 1.5rem;
+          font-size: 1.5;
+        }
+      }
+    }
+  }
+
+  .view4 {
+    width: 100%;
+    @include flexColumn(1rem);
+
+    padding: 1rem;
+
+    .top {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.7rem;
+      }
+    }
+    .bottom {
+      background-color: #1e1e1e;
+      @include flexColumn(3rem);
+      padding: 2rem;
+      justify-content: space-between;
+      border-radius: 0.7rem;
+      .text {
+        @include flexColumn(0.7rem);
+
+        h1 {
+          font-weight: 200;
+          font-size: 2.8rem;
+          text-transform: uppercase;
+        }
+        p {
+          font-weight: 100;
+          opacity: 0.6;
+          line-height: 1.5rem;
+          font-size: 1.5;
+        }
+      }
+    }
+  }
+
+  .heading {
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+
+  .view5 {
+    @include flexColumn(0rem);
+    gap: 2rem;
+    width: 100%;
+
+    padding: 1rem;
+
+    .card {
+      width: 100%;
+      height: auto;
+      background-position: center;
+      background-size: cover;
+      aspect-ratio: 1/1;
+      @include flexColumn(0rem);
+      justify-content: space-between;
+      padding: 1.5rem;
+      border-radius: 0.7rem;
+
+      .bottom {
+        background-color: rgba(92, 92, 92, 0.349);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        padding: 1.5rem 1rem;
+        border-radius: 0.7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+      }
+
+      .top {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.2rem;
+        .icon {
+          background-color: rgba(92, 92, 92, 0.349);
+          backdrop-filter: blur(5px);
+          border: 1px solid rgba(255, 255, 255, 0.125);
+          padding: 0.7rem;
+          border-radius: 50%;
+
+          i {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .card:nth-child(1) {
+      background-image: url(63d2ccbd7d003dfb6a1bdecb_team-01.webp);
+    }
+    .card:nth-child(2) {
+      background-image: url(63d2ccbd2e12fa747e999689_team-02.webp);
+    }
+    .card:nth-child(3) {
+      background-image: url(63d2ccbdc1f945f817bf4fd7_team-03.webp);
+    }
+  }
+
+  .view6 {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.7rem;
+    }
+    .bottom {
+      background-color: #1e1e1e;
+      @include flexColumn(3rem);
+      padding: 1rem;
+      gap: 3rem;
+      justify-content: space-between;
+      border-radius: 0.7rem;
+      .text {
+        @include flexColumn(0.5rem);
+
+        h1 {
+          font-weight: 200;
+          font-size: 2.8rem;
+          text-transform: uppercase;
+        }
+        p {
+          font-weight: 100;
+          opacity: 0.6;
+          line-height: 1.5rem;
+          font-size: 1.5;
+        }
+      }
+      button {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        padding: 1.2rem 1rem;
+        gap: 1rem;
+        background: none;
+        color: white;
+        border: none;
+        font-family: roboto;
+        outline: none;
+
+        i {
+          background-color: #292929;
+            border: 0.1rem solid rgba(255, 255, 255, 0.712);
+            border-radius: 50%;
+            padding: 0.2rem;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.678);
+            outline: none;
+        }
+      }
+    }
+    .top {
+      width: 100%;
+      gap: 1rem;
+    }
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #cebd63;
+    width: 95%;
+    color: #1e1e1e;
+    font-weight: 800;
+    height: auto;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 0.7rem;
+    h1 {
+      font-weight: 200;
+      font-size: 2.8rem;
+      text-transform: uppercase;
+    }
+    p {
+      font-weight: 100;
+      opacity: 0.6;
+      line-height: 1.5rem;
+      font-size: 1.5;
+    }
+    button {
+      width: fit-content;
+      border: none;
+      outline: none;
+      padding: 0.7rem 1rem;
+      border-radius: 0.5rem;
+      font-family: roboto;
+      background-color: #1e1e1e;
+      color: white;
+    }
+  }
+  footer {
+    padding: 3rem;
+    background-color: #1e1e1e;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    gap: 2rem;
+
+    .links {
+      @include flexColumn(2rem);
+
+      p {
+        opacity: 0.6;
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+      }
+
+      a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.438);
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  main {
+    .view1 {
       flex-direction: row;
-      padding: 1rem 4rem;
 
       .top,
       .bottom {
@@ -92,19 +445,87 @@ main {
         justify-content: space-between;
         padding: 3em;
         .text {
-
-            gap: 1.5rem;
-            h1 {
-                font-size: 3.5rem;
-                text-align: left;
-            }
-            p {
-                text-align: left;
-                width: 60%;
-                font-size: 1rem;
-            }
+          gap: 1.5rem;
+          h1 {
+            font-size: 3.5rem;
+            text-align: left;
+          }
+          p {
+            text-align: left;
+            width: 60%;
+            font-size: 1rem;
+          }
         }
       }
+    }
+
+    .view2 {
+      display: flex;
+      flex-direction: row;
+
+      .top,
+      .bottom {
+        gap: 2rem;
+        width: 50%;
+      }
+    }
+
+    .view3 {
+      flex-direction: row-reverse;
+
+      .top,
+      .bottom {
+        width: 50%;
+      }
+
+      .paragraphs {
+        display: flex;
+        gap: 2rem;
+      }
+    }
+
+    .view4 {
+      flex-direction: row;
+      .top,
+      .bottom {
+        width: 50%;
+      }
+    }
+
+    .heading {
+      text-align: left;
+      padding: 1rem 2rem;
+    }
+
+    .view5 {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .view6 {
+      flex-direction: row;
+      .top {
+        width: 60%;
+      }
+      .bottom {
+        width: 40%;
+        padding: 3rem;
+      }
+    }
+    .contact {
+      flex-direction: row;
+      width: 98%;
+
+      button {
+        margin-top: 8rem;
+      }
+    }
+    footer {
+      flex-direction: row;
+      align-items: center;
+      width: 98%;
+      margin: 1rem;
     }
   }
 }
