@@ -69,9 +69,11 @@ main .hero .top-lg .bottom h1 {
   padding: 1rem;
   font-weight: 700;
 }
-main .hero .top-lg p {
-  font-size: 2.1rem;
+main .hero p {
+  font-size: 1.5rem;
   padding: 1rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7176470588);
   font-weight: 400;
   margin: 1rem;
 }
@@ -406,7 +408,9 @@ main footer .other-links a {
   main .community-feature .community-get-involved .bottom {
     flex: 1;
   }
-  main .consultants-feature .features, main .consultants-everyone .features, main .consultants-packages .features {
+  main .consultants-feature .features,
+  main .consultants-everyone .features,
+  main .consultants-packages .features {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -415,8 +419,10 @@ main footer .other-links a {
     gap: 4rem;
   }
   main .consultants-feature .features .top,
-  main .consultants-feature .features .bottom, main .consultants-everyone .features .top,
-  main .consultants-everyone .features .bottom, main .consultants-packages .features .top,
+  main .consultants-feature .features .bottom,
+  main .consultants-everyone .features .top,
+  main .consultants-everyone .features .bottom,
+  main .consultants-packages .features .top,
   main .consultants-packages .features .bottom {
     flex: 1;
   }

@@ -93,13 +93,14 @@ main {
           font-weight: 700;
         }
       }
-
-      p {
-        font-size: 2.1rem;
-        padding: 1rem;
-        font-weight: 400;
-        margin: 1rem;
-      }
+    }
+    p {
+      font-size: 1.5rem;
+      padding: 1rem;
+      text-align: center;
+      color: #000000b7;
+      font-weight: 400;
+      margin: 1rem;
     }
   }
 
@@ -474,7 +475,9 @@ main {
       }
     }
 
-    .consultants-feature,.consultants-everyone,.consultants-packages {
+    .consultants-feature,
+    .consultants-everyone,
+    .consultants-packages {
       .features {
         display: flex;
         align-items: center;
