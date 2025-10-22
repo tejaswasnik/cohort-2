@@ -70,12 +70,14 @@ main .hero .top-lg .bottom h1 {
   font-weight: 700;
 }
 main .hero p {
-  font-size: 1.5rem;
-  padding: 1rem;
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.7176470588);
   font-weight: 400;
-  margin: 1rem;
+  margin: 0.5rem auto;
+  max-width: 90%;
+  line-height: 1.4;
 }
 main hr {
   margin: 1.5rem 2rem;
@@ -214,10 +216,11 @@ main .get-started {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
-  padding: 1rem;
+  padding: 1rem 1rem 2rem;
   overflow: hidden;
+  margin: 1rem;
 }
 main .get-started .background {
   position: relative;
@@ -251,11 +254,14 @@ main .get-started .text {
   position: relative;
 }
 main .get-started .text h1 {
-  font-size: 3rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 main .get-started .text p {
   margin-top: 1rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 main .get-started .button button {
   padding: 0.75rem 2.5rem;
@@ -278,14 +284,15 @@ main footer .footer .logo img {
 }
 main footer .links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 0 1rem;
 }
 main footer .links .link-stack {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 2rem;
+  gap: 0.75rem;
+  padding: 1.5rem;
 }
 main footer .links .link-stack p {
   font-weight: 600;
