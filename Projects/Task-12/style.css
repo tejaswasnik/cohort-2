@@ -11,11 +11,14 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 main {
   width: 100%;
   min-height: 100vh;
+  max-width: 2000px;
 }
 main header {
   display: flex;
@@ -41,27 +44,32 @@ main .nav img {
 main .hero {
   background: linear-gradient(25deg, #fde8f0 20%, #f3fcff 30%, #f3fcff);
 }
-main .hero .top {
+main .hero .top-lg {
+  text-align: center;
+}
+main .hero .top-lg .top {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
-main .hero .top img {
-  height: 20rem;
+main .hero .top-lg .top img {
+  width: 100%;
+  height: auto;
 }
-main .hero .bottom {
+main .hero .top-lg .bottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-main .hero .bottom h1 {
+main .hero .top-lg .bottom h1 {
   font-size: 2.5rem;
   padding: 1rem;
   font-weight: 700;
 }
-main .hero .bottom p {
+main .hero .top-lg p {
   font-size: 2.1rem;
   padding: 1rem;
   font-weight: 400;
@@ -335,11 +343,84 @@ main footer .other-links a {
 }
 
 @media (min-width: 900px) {
-  .hero {
+  main .hero {
+    padding: 4rem;
+    width: 100%;
+  }
+  main .hero .top-lg {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
   }
-  .hero .top img {
-    width: 50rem;
+  main .hero .top-lg .top {
+    flex: 1;
+  }
+  main .hero .top-lg .top img {
+    width: 100%;
+    height: auto;
+  }
+  main .hero .top-lg .bottom {
+    flex: 1;
+  }
+  main .hero .top-lg .bottom h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  main .hero p {
+    font-size: 2rem;
+    line-height: 1.4;
+    text-align: center;
+    color: #4a4a4a;
+    margin: 0 auto;
+  }
+  main .info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 5rem;
+  }
+  main .info .community .top .heading,
+  main .info .events .top .heading,
+  main .info .packages .top .heading {
+    font-size: 1.5rem;
+  }
+  main .info .community .top .tagline,
+  main .info .events .top .tagline,
+  main .info .packages .top .tagline {
+    font-weight: 500;
+  }
+  main .community-feature .community-get-involved {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem;
+    margin: 0 auto;
+    gap: 4rem;
+  }
+  main .community-feature .community-get-involved .top,
+  main .community-feature .community-get-involved .bottom {
+    flex: 1;
+  }
+  main .consultants-feature .features, main .consultants-everyone .features, main .consultants-packages .features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    margin: 0 auto;
+    gap: 4rem;
+  }
+  main .consultants-feature .features .top,
+  main .consultants-feature .features .bottom, main .consultants-everyone .features .top,
+  main .consultants-everyone .features .bottom, main .consultants-packages .features .top,
+  main .consultants-packages .features .bottom {
+    flex: 1;
+  }
+  main .hidden {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

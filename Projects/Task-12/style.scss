@@ -31,11 +31,14 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 main {
   width: 100%;
   min-height: 100vh;
+  max-width: 2000px;
 
   header {
     display: flex;
@@ -63,28 +66,32 @@ main {
 
   .hero {
     background: linear-gradient(25deg, #fde8f0 20%, #f3fcff 30%, #f3fcff);
-
-    .top {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      img {
-        height: 20rem;
-      }
-    }
-
-    .bottom {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    .top-lg {
       text-align: center;
+      .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
 
-      h1 {
-        font-size: 2.5rem;
-        padding: 1rem;
-        font-weight: 700;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+          font-size: 2.5rem;
+          padding: 1rem;
+          font-weight: 700;
+        }
       }
 
       p {
@@ -390,13 +397,101 @@ main {
 }
 
 @media (min-width: 900px) {
-  .hero {
-    display: flex;
-    flex-direction: row-reverse;
-    .top {
-      img {
-        width: 50rem;
-      }}
+  main {
+    .hero {
+      padding: 4rem;
+      width: 100%;
+
+      .top-lg {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 4rem;
+        margin-bottom: 3rem;
+
+        .top {
+          flex: 1;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .bottom {
+          flex: 1;
+          h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            text-align: left;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+
+      p {
+        font-size: 2rem;
+        line-height: 1.4;
+        text-align: center;
+        color: #4a4a4a;
+        margin: 0 auto;
+      }
+    }
+
+    .info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      padding: 5rem;
+
+      .community,
+      .events,
+      .packages {
+        .top {
+          .heading {
+            font-size: 1.5rem;
+          }
+          .tagline {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .community-feature {
+      .community-get-involved {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6rem;
+        margin: 0 auto;
+        gap: 4rem;
+
+        .top,
+        .bottom {
+          flex: 1;
+        }
+      }
+    }
+
+    .consultants-feature,.consultants-everyone,.consultants-packages {
+      .features {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem;
+        margin: 0 auto;
+        gap: 4rem;
+
+        .top,
+        .bottom {
+          flex: 1;
+        }
+      }
+    }
+
+    .hidden {
+      display: none;
     }
   }
-    
+}
