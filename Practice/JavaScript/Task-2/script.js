@@ -62,8 +62,8 @@ var a = 10;
 // b
 console.log(b);
 let b = 10;
-error
-Uncaught ReferenceError: Cannot access 'b' before initialization at script.js:63:13
+// error
+//Uncaught ReferenceError: Cannot access 'b' before initialization at script.js:63:13
 
 // c
 test();
