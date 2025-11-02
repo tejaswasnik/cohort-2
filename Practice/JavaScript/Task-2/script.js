@@ -60,10 +60,10 @@ var a = 10;
 // undefined.
 
 // b
-// console.log(b);
-// let b = 10;
-// error
-//Uncaught ReferenceError: Cannot access 'b' before initialization at script.js:63:13
+console.log(b);
+let b = 10;
+error
+Uncaught ReferenceError: Cannot access 'b' before initialization at script.js:63:13
 
 // c
 test();
