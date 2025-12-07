@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+html {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+}
