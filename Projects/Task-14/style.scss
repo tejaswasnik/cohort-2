@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  main {
+    height: 72rem;
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    border-radius: 2rem;
+    #hero {
+      padding: 5rem;;
+      #poster {
+        margin: 1rem;
+        width: 30rem;
+        height: 44.44rem;
+        border-radius: 1.5rem;
+        background-size: cover;
+        background-position: center;
+        background-image: url(https://ih1.redbubble.net/image.3827895648.6256/flat,750x,075,f-pad,750x1000,f8f8f8.jpg);
+      }
+      #texts {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.5rem;
+        gap: 1rem;
+      }
+      .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+          button {
+              background-color: black;
+              padding: 1rem 3rem;
+              color: white;
+              font-size: 2rem;
+              border: none;
+              border-radius: 1rem;
+              cursor: pointer;
+            }
+            button:hover {
+              transition: all 0.3s ease;
+              background-color: white;
+              color: black;
+        }
+        button:active {
+          scale: 0.95;
+        }
+    }
+  }
+
+    @media (max-width: 800px) {
+      html,
+      body {
+        padding: 1rem;
+      }
+
+      main {
+        width: 92%;
+        border-radius: 1rem;
+        padding: 1rem;
+      }
+
+      #hero {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        #poster {
+          width: 100%;
+          max-width: 360px;
+          height: auto;
+          aspect-ratio: 2/3;
+          border-radius: 1rem;
+          background-size: cover;
+        }
+
+        #texts {
+          font-size: 1.1rem;
+          gap: 0.5rem;
+          padding: 0 0.5rem;
+        }
+
+        .btn {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          button {
+            width: 100%;
+            max-width: 320px;
+            padding: 0.7rem 1rem;
+            font-size: 1.2rem;
+            border-radius: 0.75rem;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 420px) {
+      main {
+        width: 98%;
+      }
+
+      #hero {
+        padding: 1.25rem;
+
+        #poster {
+          max-width: 300px;
+        }
+
+        .btn button {
+          font-size: 1rem;
+          padding: 0.6rem 0.9rem;
+        }
+      }
+    }
+
+}}

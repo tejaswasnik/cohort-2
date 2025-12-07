@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+html main,
+body main {
+  height: 72rem;
+  width: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  border: 2px solid white;
+  border-radius: 2rem;
+}
+html main #hero,
+body main #hero {
+  padding: 5rem;
+}
+html main #hero #poster,
+body main #hero #poster {
+  margin: 1rem;
+  width: 30rem;
+  height: 44.44rem;
+  border-radius: 1.5rem;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://ih1.redbubble.net/image.3827895648.6256/flat,750x,075,f-pad,750x1000,f8f8f8.jpg);
+}
+html main #hero #texts,
+body main #hero #texts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+html main #hero .btn,
+body main #hero .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html main #hero .btn button,
+body main #hero .btn button {
+  background-color: black;
+  padding: 1rem 3rem;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+html main #hero .btn button:hover,
+body main #hero .btn button:hover {
+  transition: all 0.3s ease;
+  background-color: white;
+  color: black;
+}
+html main #hero .btn button:active,
+body main #hero .btn button:active {
+  scale: 0.95;
+}
+@media (max-width: 800px) {
+  html main html,
+  html main body,
+  body main html,
+  body main body {
+    padding: 1rem;
+  }
+  html main main,
+  body main main {
+    width: 92%;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  html main #hero,
+  body main #hero {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  html main #hero #poster,
+  body main #hero #poster {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    aspect-ratio: 2/3;
+    border-radius: 1rem;
+    background-size: cover;
+  }
+  html main #hero #texts,
+  body main #hero #texts {
+    font-size: 1.1rem;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+  html main #hero .btn,
+  body main #hero .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  html main #hero .btn button,
+  body main #hero .btn button {
+    width: 100%;
+    max-width: 320px;
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.75rem;
+  }
+}
+@media (max-width: 420px) {
+  html main main,
+  body main main {
+    width: 98%;
+  }
+  html main #hero,
+  body main #hero {
+    padding: 1.25rem;
+  }
+  html main #hero #poster,
+  body main #hero #poster {
+    max-width: 300px;
+  }
+  html main #hero .btn button,
+  body main #hero .btn button {
+    font-size: 1rem;
+    padding: 0.6rem 0.9rem;
+  }
+}/*# sourceMappingURL=style.css.map */
