@@ -12,6 +12,12 @@ var audios = [
     {key: 38, file: "keys/38.mp3"},
     {key: 39, file: "keys/39.mp3"},
 ]
+var keyid = [
+  key28, key29, key30, key31, key32, key33,
+  key34, key35, key36, key37, key38, key39
+];
+
+
 var key28 = document.getElementById("28");
 var key29 = document.getElementById("29");
 var key30 = document.getElementById("30");
@@ -104,7 +110,7 @@ key37.addEventListener('click', function(){
             keyid[9].style.transform = `scale(1)`;
         }, 100);
 })
-key38.addEventListener('cl`ick', function(){
+key38.addEventListener('click', function(){
     audio.src = `${audios[10].file}`;
         audio.play();
         keyid[10].style.transform = `scale(0.9)`;
