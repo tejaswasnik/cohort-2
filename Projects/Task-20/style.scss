@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box {
+    width: 60%;
+    font-size: 1rem;
+    padding: 2rem;
+    background-color: grey;
+    margin: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+button {
+    background-color: royalblue;
+    padding: 1rem;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
