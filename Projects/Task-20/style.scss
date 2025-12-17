@@ -1,42 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(
+    to right bottom,
+    rgb(26, 26, 26),
+    rgb(30, 30, 30),
+    black
+  );
+}
+main::-webkit-scrollbar {
+  display: none;
+}
+.allreels {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.allreels::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.reel::-webkit-scrollbar {
+  display: none;
+}
+.reel {
+  padding: 0.25rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  video {
+    border-radius: 10px;
     height: 100%;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  }
+  .interactions {
+    position: absolute;
+    bottom: 16%;
+    right: 3%;
+    .like,
+    .comment,
+    .share,
+    .menu {
+      margin: 10px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 1.1rem;
+      align-items: center;
+    }
+  }
+  .bottom {
+    position: absolute;
+    bottom: 3%;
+    left: 6%;
+    .caption {
+      font-size: 0.75rem;
+      padding: 0.5rem 0rem;
+    }
+    .profile {
+      gap: 0.5rem;
+      display: flex;
+      align-items: center;
+      p {
+        font-weight: 900;
+        font-size: 0.8rem;
+      }
+      button {
+        background: none;
+        padding: 0.25rem;
+        color: white;
+        border: 2px solid white;
+        font-size: 0.6rem;
+      }
+    }
+    img {
+      height: 25px;
+      width: 25px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
 }
 
-.box {
-    width: 60%;
-    font-size: 1rem;
-    padding: 2rem;
-    background-color: grey;
-    margin: 1rem;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 1rem;
-}
 
-button {
-    background-color: royalblue;
-    padding: 1rem;
-    color: white;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
+.love {
+    color: red;
 }

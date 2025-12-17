@@ -4,39 +4,113 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
   height: 100%;
   width: 100%;
-  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  color: white;
+  background: linear-gradient(to right bottom, rgb(26, 26, 26), rgb(30, 30, 30), black);
 }
 
-.box {
-  width: 60%;
-  font-size: 1rem;
-  padding: 2rem;
-  background-color: grey;
-  margin: 1rem;
-  color: white;
+main::-webkit-scrollbar {
+  display: none;
+}
+
+.allreels {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 400px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  border-radius: 1rem;
 }
 
-button {
-  background-color: royalblue;
-  padding: 1rem;
+.allreels::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.reel::-webkit-scrollbar {
+  display: none;
+}
+
+.reel {
+  padding: 0.25rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+.reel video {
+  border-radius: 10px;
+  height: 100%;
+}
+.reel .interactions {
+  position: absolute;
+  bottom: 16%;
+  right: 3%;
+}
+.reel .interactions .like,
+.reel .interactions .comment,
+.reel .interactions .share,
+.reel .interactions .menu {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.1rem;
+  align-items: center;
+}
+.reel .bottom {
+  position: absolute;
+  bottom: 3%;
+  left: 6%;
+}
+.reel .bottom .caption {
+  font-size: 0.75rem;
+  padding: 0.5rem 0rem;
+}
+.reel .bottom .profile {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.reel .bottom .profile p {
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+.reel .bottom .profile button {
+  background: none;
+  padding: 0.25rem;
   color: white;
-  border: none;
-  border-radius: 1rem;
-  cursor: pointer;
+  border: 2px solid white;
+  font-size: 0.6rem;
+}
+.reel .bottom img {
+  height: 25px;
+  width: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.love {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
