@@ -1,3 +1,11 @@
+@font-face {
+  font-family: helvetica;
+  src: url(fonts/HelveticaNeueRoman.otf);
+}
+@font-face {
+  font-family: helvetica-bold;
+  src: url(fonts/HelveticaNeueBold.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,107 +16,110 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: helvetica;
 }
 
 main {
-  height: 100%;
-  width: 100%;
+  background: linear-gradient(to right top, black, rgb(36, 36, 36), black);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  background: linear-gradient(to right bottom, rgb(26, 26, 26), rgb(30, 30, 30), black);
+  height: 100%;
 }
-
-main::-webkit-scrollbar {
-  display: none;
-}
-
-.allreels {
+main .all-reels {
+  height: 100%;
   overflow: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  height: 100%;
-  width: 400px;
+}
+main .all-reels .reel {
+  position: relative;
+  padding: 1rem;
+  color: white;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+main .all-reels .reel .bottom {
+  position: absolute;
+  bottom: 5%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  left: 5%;
 }
-
-.allreels::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+main .all-reels .reel .bottom .caption {
+  padding: 0rem 0.75rem;
+}
+main .all-reels .reel .bottom .profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+}
+main .all-reels .reel .bottom .profile img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .all-reels .reel .bottom .profile p {
+  font-size: 0.75rem;
+  font-family: helvetica-bold;
+}
+main .all-reels .reel .bottom .profile p:hover {
+  color: red;
+  transition: ease 0.2s all;
+  cursor: pointer;
+}
+main .all-reels .reel .bottom .profile button {
+  font-size: 0.6rem;
+  padding: 0.1rem 0.2rem;
+  color: white;
+  background: transparent;
+  border: 1px solid rgb(71, 71, 71);
+  border-radius: 0.2rem;
+  transition: ease-in-out 0.5s all;
+}
+main .all-reels .reel .bottom .profile button:hover {
+  background-color: royalblue;
+  cursor: pointer;
+}
+main .all-reels .reel .interactions {
+  position: absolute;
+  right: 7%;
+  bottom: 20%;
+}
+main .all-reels .reel .interactions .like,
+main .all-reels .reel .interactions .comment,
+main .all-reels .reel .interactions .share,
+main .all-reels .reel .interactions .more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.3rem 0rem;
+  gap: 0.05rem;
+  cursor: pointer;
+}
+main .all-reels .reel .interactions .like i:hover,
+main .all-reels .reel .interactions .comment i:hover,
+main .all-reels .reel .interactions .share i:hover,
+main .all-reels .reel .interactions .more i:hover {
+  color: red;
+  transition: ease 0.2s all;
+}
+main .all-reels .reel video {
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 500px;
 }
 
 .reel::-webkit-scrollbar {
   display: none;
 }
 
-.reel {
-  padding: 0.25rem;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  position: relative;
-  margin-bottom: 20px;
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
-}
-.reel video {
-  border-radius: 10px;
-  height: 100%;
-}
-.reel .interactions {
-  position: absolute;
-  bottom: 16%;
-  right: 3%;
-}
-.reel .interactions .like,
-.reel .interactions .comment,
-.reel .interactions .share,
-.reel .interactions .menu {
-  margin: 10px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 1.1rem;
-  align-items: center;
-}
-.reel .bottom {
-  position: absolute;
-  bottom: 3%;
-  left: 6%;
-}
-.reel .bottom .caption {
-  font-size: 0.75rem;
-  padding: 0.5rem 0rem;
-}
-.reel .bottom .profile {
-  gap: 0.5rem;
-  display: flex;
-  align-items: center;
-}
-.reel .bottom .profile p {
-  font-weight: 900;
-  font-size: 0.8rem;
-}
-.reel .bottom .profile button {
-  background: none;
-  padding: 0.25rem;
-  color: white;
-  border: 2px solid white;
-  font-size: 0.6rem;
-}
-.reel .bottom img {
-  height: 25px;
-  width: 25px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
+.all-reels::-webkit-scrollbar {
+  display: none;
 }
 
 .love {

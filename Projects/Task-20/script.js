@@ -1,6 +1,6 @@
 const reels = [
   {
-    reelUrl: "https://www.pexels.com/download/video/2785536/",
+    reelUrl: "https://assets.mixkit.co/videos/49876/49876-720.mp4",
     username: "travelwithaarav",
     profilePic: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
     caption: "Mountains cure everything 🌄",
@@ -11,7 +11,7 @@ const reels = [
     isFollowed: true,
   },
   {
-    reelUrl: "https://www.pexels.com/download/video/3959544/",
+    reelUrl: "https://assets.mixkit.co/videos/49858/49858-720.mp4",
     username: "fitbyneha",
     profilePic: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
     caption: "No excuses today 💪",
@@ -22,7 +22,7 @@ const reels = [
     isFollowed: false,
   },
   {
-    reelUrl: "https://www.pexels.com/download/video/4057322/",
+    reelUrl: "https://assets.mixkit.co/videos/34564/34564-720.mp4",
     username: "streetfoodindia",
     profilePic: "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
     caption: "Street food heaven 🤤🔥",
@@ -32,106 +32,79 @@ const reels = [
     isLiked: false,
     isFollowed: true,
   },
-  {
-    reelUrl: "https://www.pexels.com/download/video/5595352/",
-    username: "codingdaily",
-    profilePic: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
-    caption: "Debugging at 2 AM 👨‍💻",
-    likesCount: 6789,
-    commentsCount: 145,
-    shareCount: 60,
-    isLiked: true,
-    isFollowed: true,
-  },
-  {
-    reelUrl: "https://www.pexels.com/download/video/4057154/",
-    username: "aestheticvibes",
-    profilePic: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
-    caption: "Calm vibes only ✨",
-    likesCount: 15890,
-    commentsCount: 412,
-    shareCount: 276,
-    isLiked: false,
-    isFollowed: false,
-  },
-  {
-    reelUrl: "https://www.pexels.com/download/video/4434136/",
-    username: "urbanrider",
-    profilePic: "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
-    caption: "Late night city rides 🏍️",
-    likesCount: 20455,
-    commentsCount: 530,
-    shareCount: 410,
-    isLiked: true,
-    isFollowed: true,
-  },
-  {
-    reelUrl: "https://www.pexels.com/download/video/4115283/",
-    username: "naturetones",
-    profilePic: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde",
-    caption: "Nature never disappoints 🍃",
-    likesCount: 11234,
-    commentsCount: 198,
-    shareCount: 142,
-    isLiked: false,
-    isFollowed: false,
-  },
-  {
-    reelUrl: "https://www.pexels.com/download/video/4038501/",
-    username: "coffeediaries",
-    profilePic: "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7",
-    caption: "Morning coffee ritual ☕",
-    likesCount: 8450,
-    commentsCount: 176,
-    shareCount: 80,
-    isLiked: true,
-    isFollowed: true,
-  },
 ];
-var sum = "";
-reels.forEach(function (elem) {
-  sum =
-    sum +
-    `<div class="reel">
-            <video autoplay loop muted src="${elem.reelUrl}"></video>
-          <div class="interactions">
-            <div class="like">
-            ${
-              elem.isLiked
-                ? '<i class="love ri-heart-3-fill"></i>'
-                : '<i class="ri-heart-3-line"></i>'
-            }
-              
-              <p>${elem.likesCount}</p>
-            </div>
-            <div class="comment">
-              <i class="ri-chat-3-line"></i>
-              <p>${elem.commentsCount}</p>
-            </div>
-            <div class="share">
-              <i class="ri-share-forward-line"></i>
-              <p>${elem.shareCount}</p>
-            </div>
-            <div class="menu">
-              <i class="ri-more-2-line"></i>
-            </div>
-          </div>
-          <div class="bottom">
-            <div class="profile">
-              <img
-                src="${elem.profilePic}"
-                alt="profilepic"
-              />
-              <p>${elem.username}</p>
-              <button>${elem.isFollowed ? "Unfollow" : "Follow"}</button>
-            </div>
-            <div class="caption">
-              <h1>${elem.caption}</h1>
-            </div>
-          </div>
+
+var allReels = document.querySelector(".all-reels");
+
+function AddData() {
+  sum = "";
+  reels.forEach(function (elem, idx) {
+    sum =
+      sum +
+      `<div class="reel">
+        <video
+        autoplay
+        muted
+        loop
+        src="${elem.reelUrl}"
+        ></video>
+        <div class="bottom">
+        <div class="profile">
+        <img src="${elem.profilePic}" alt="profilepic" />
+        <p>${elem.username}</p>
+        <button id = "${idx}" class="follow">${
+        elem.isFollowed ? "Unfollow" : "Follow"
+      }</button>
+        </div>
+        <div class="caption">
+        <h3>${elem.caption}</h3>
+        </div>
+        </div>
+        <div class="interactions">
+        <div id = "${idx}" class="like">
+        ${
+          elem.isLiked
+            ? `<i id = ${idx} class="ri-heart-3-fill like"></i>`
+            : `<i id = ${idx} class="ri-heart-3-line like"></i>`
+        }
+        <p>${elem.likesCount}</p>
+        </div>
+        <div class="comment">
+        <i class="ri-chat-3-line"></i>
+        <p>${elem.commentsCount}</p>
+        </div>
+        <div class="share">
+        <i class="ri-share-forward-line"></i>
+        <p>${elem.shareCount}</p>
+        </div>
+        <div class="more">
+        <i class="ri-more-2-line"></i>
+        </div>
+        </div>
         </div>`;
+  });
+
+  allReels.innerHTML = sum;
+}
+
+AddData();
+
+allReels.addEventListener("click", function (dets) {
+  if ((dets.target.className = "like")) {
+    if (!reels[dets.target.id].isLiked) {
+      reels[dets.target.id].likesCount++;
+      reels[dets.target.id].isLiked = true;
+    } else {
+      reels[dets.target.id].likesCount--;
+      reels[dets.target.id].isLiked = false;
+    }
+  }
+  if ((dets.target.className = "follow")) {
+    if (!reels[dets.target.id].isFollowed) {
+      reels[dets.target.id].isFollowed = true;
+    } else {
+      reels[dets.target.id].isFollowed = false;
+    }
+  }
+  AddData();
 });
-
-var allReels = document.querySelector(".allreels");
-
-allReels.innerHTML = sum;
