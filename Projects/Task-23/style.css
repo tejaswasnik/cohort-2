@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   background-color: black;
@@ -23,20 +24,21 @@ main {
   align-items: center;
 }
 main .box {
-  height: 200px;
-  width: 200px;
+  height: 4rem;
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+main .box p {
+  font-size: 2ren;
+  color: white;
 }
 main .box:hover {
   anchor-name: --some-anchor;
-}
-main .red {
-  background-color: rgb(134, 27, 27);
-}
-main .blue {
-  background-color: rgb(32, 32, 129);
-}
-main .green {
-  background-color: rgb(31, 109, 31);
 }
 main .anchor {
   background-color: #ffffff;

@@ -1,59 +1,56 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body {
-    height: 100%;
-    width: 100%;
-    background-color: black;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
 }
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    anchor-name: --some-anchor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  anchor-name: --some-anchor;
 }
 
 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // gap: 30px;
+
+  .box {
+    height:4rem;
+    width: 8rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    // gap: 30px;
-    
-    .box {
-        height: 200px;
-        width: 200px;
+    justify-content: center;
+    margin: 1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    p {
+        font-size: 2ren;
+        color: white;
     }
-    .box:hover {
-        anchor-name: --some-anchor;
-    }
-    
-    .red {
-        background-color: rgb(134, 27, 27);
-        
-    }
-    
-    .blue {
-        background-color: rgb(32, 32, 129);
-        
-    }
-    
-    .green {
-        background-color: rgb(31, 109, 31);
-        
-    }
-    .anchor {
-        background-color: #ffffff;
-        border-radius: 10px;
-        position: absolute;
-        top: anchor(top);
-        left: anchor(left);
-        right: anchor(right);
-        bottom: anchor(bottom);
-        pointer-events: none;
-        position-anchor: --some-anchor;
-        transition: all 0.1s ease-in;
-        mix-blend-mode: difference;
-    }
+  }
+  .box:hover {
+    anchor-name: --some-anchor;
+  }
+
+  .anchor {
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    top: anchor(top);
+    left: anchor(left);
+    right: anchor(right);
+    bottom: anchor(bottom);
+    pointer-events: none;
+    position-anchor: --some-anchor;
+    transition: all 0.1s ease-in;
+    mix-blend-mode: difference;
+  }
 }
