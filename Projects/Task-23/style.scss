@@ -12,6 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    anchor-name: --some-anchor;
 }
 
 main {
@@ -46,12 +47,13 @@ main {
         background-color: #ffffff;
         border-radius: 10px;
         position: absolute;
-        height: 50px;
         top: anchor(top);
         left: anchor(left);
-        width: 60px;
+        right: anchor(right);
+        bottom: anchor(bottom);
+        pointer-events: none;
         position-anchor: --some-anchor;
         transition: all 0.1s ease-in;
-        mix-blend-mode: overlay;
+        mix-blend-mode: difference;
     }
 }
