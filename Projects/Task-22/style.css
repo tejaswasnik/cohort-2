@@ -1,0 +1,73 @@
+@font-face {
+  font-family: stranger-things-normal;
+  src: url(fonts/Benguiat\ Bold.ttf);
+}
+@font-face {
+  font-family: stranger-things-border;
+  src: url(fonts/Stranger\ Things\ Outlined.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@property --angleRotate {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes rotateBG {
+  from {
+    --angleRotate: 0deg;
+  }
+  to {
+    --angleRotate: 360deg;
+  }
+}
+main {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .box {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  gap: 0.5rem;
+  box-shadow: 0rem 0rem 5rem rgb(255, 0, 0);
+  background: linear-gradient(black) padding-box, conic-gradient(from var(--angleRotate), black, rgb(255, 0, 0), black) border-box;
+  border: 5px solid rgba(0, 0, 0, 0);
+  animation: rotateBG 5s infinite;
+}
+main .box img {
+  width: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .box .text {
+  text-align: center;
+  margin: 0.5rem 0rem;
+}
+main .box .text h1 {
+  font-size: 0.7rem;
+  font-family: stranger-things-normal;
+  margin-bottom: 0.25rem;
+}
+main .box .text p {
+  font-size: 0.4rem;
+  font-family: "Times New Roman", Times, serif;
+}/*# sourceMappingURL=style.css.map */

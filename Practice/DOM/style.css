@@ -1,17 +1,51 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {
-    color: #fff;
-    font-size: 3rem;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+@property --bg-color {
+  syntax: "<color>";
+  initial-value: rgb(0, 174, 255);
+  inherits: false;
+}
+
+@keyframes animateBGColor {
+  from{
+    background-color: red;
+  }
+  to{
+    background-color: #ff00dd;
+  }
 }
 
 .box {
-    height: 100px;
-    width: 100px;
-    background-color: crimson;
+  height: 200px;
+  width: 400px;
+  /* animation: backgroundColorChange 2s forwards alternate; */
+  /* background-color: var(--bg-color); */
+  animation: animateBGColor 2s;
 }
+
+/* @keyframes backgroundColorChange {
+  from {
+    background: red;
+    scale: 1;
+    border-radius: 0px;
+  }
+  to {
+    background: blue;
+    scale: 0.9;
+    border-radius: 50px;
+  }
+} */
