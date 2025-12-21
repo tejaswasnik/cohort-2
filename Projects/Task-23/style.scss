@@ -38,6 +38,7 @@ main {
   }
   .box:hover {
     anchor-name: --some-anchor;
+    transform: scale(1.2);
   }
 
   .anchor {
@@ -53,4 +54,9 @@ main {
     transition: all 0.1s ease-in;
     mix-blend-mode: difference;
   }
+}
+body:has(.box:hover) .box {
+    opacity: 0.8;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
 }
