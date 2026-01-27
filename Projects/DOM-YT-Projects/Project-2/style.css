@@ -1,0 +1,38 @@
+@font-face {
+  font-family: filroy-black;
+  src: url(Gilroy-Black.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-size: 3rem;
+  overflow: hidden;
+  font-weight: 800;
+}
+main .cursor {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  transition: linear 0.05s all;
+}/*# sourceMappingURL=style.css.map */

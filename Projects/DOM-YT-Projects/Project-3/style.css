@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+main .frame {
+  background-color: white;
+  width: 30vw;
+  height: 100%;
+  border-radius: 20px;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+main .frame .story-open {
+  height: 100%;
+  width: 100%;
+  display: none;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+main .frame .stories {
+  width: 100%;
+  height: 15vh;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+main .frame .stories .story {
+  border-radius: 50%;
+  height: 10vh;
+  width: 5vw;
+  margin: 3px;
+  display: inline-block;
+  overflow: hidden;
+}
+main .frame .stories .story .dp {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
