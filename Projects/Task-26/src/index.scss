@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  height: 20%;
+  width: 100%;
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    .links {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+      }
+    }
+    img {
+      height: 4rem;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+
+    button {
+      background: none;
+      border: none;
+      padding: 1.5rem;
+      text-decoration: underline dotted;
+      font-size: 1rem;
+    }
+  }
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  .hero {
+    position: relative;
+    background-image: url(assets/man.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    .left {
+      height: 100%;
+      width: 50%;
+      padding: 1rem;
+      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 7rem;
+      .stats {
+        display: flex;
+        gap: 1rem;
+        .stat {
+          h1 {
+            font-weight: 300;
+            font-size: 3rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+      .hello {
+        h1 {
+            font-size: 20rem;
+            font-weight: 100;
+            color: #2B2B2B;
+        }
+        p {
+            color: #2B2B2B;
+            font-size: 1.2rem;
+        }
+      }
+      .scrl-dwn {
+          text-decoration: none;
+          font-weight: 100;
+          color: #2B2B2B;
+      }
+    }
+    .product {
+        position: absolute;
+        top: 40%;
+        left: -10%;
+        transform: rotate(90deg);
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: #a3a3a3;
+        .line {
+            background-color: #c2c2c2;
+            margin-top: 0.5px solid #c2c2c2;
+            height: 1px;
+            width: 25vw;
+        }
+    }
+  }
+}
