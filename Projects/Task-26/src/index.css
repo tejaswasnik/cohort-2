@@ -36,6 +36,11 @@ body {
 }
 .navbar .left img {
   height: 4rem;
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 40%;
+  margin-left: 2rem;
+  margin-top: 1rem;
 }
 .navbar .right {
   display: flex;

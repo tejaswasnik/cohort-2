@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="left">
         <div className="logo">
-          <img src="src\assets\logo.png" alt="logo" />
+          <img src="https://sher-assignment-28.vercel.app/assets/logo.svg" alt="logo" />
         </div>
         <div className="links">
           <a href="#">About Me</a>
