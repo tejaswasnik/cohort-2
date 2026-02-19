@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  width: 100%;
+  background-color: #f4f6fb;
+}
+
+/* ---------- MAIN LAYOUT ---------- */
+.main {
+  width: 100%;
+}
+
+/* ---------- FORM ---------- */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+input {
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  border-color: maroon;
+  box-shadow: 0 0 0 3px rgba(128, 0, 0, 0.15);
+}
+
+button {
+  padding: 0.6rem 1.4rem;
+  background-color: maroon;
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(128, 0, 0, 0.35);
+}
+
+/* ---------- CARDS GRID ---------- */
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 32px;
+}
+
+/* ---------- CARD ---------- */
+.card {
+  width: 280px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- CARD IMAGE ---------- */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* ---------- CARD TEXT ---------- */
+.card p {
+  margin: 6px 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+/* ---------- REMOVE BUTTON ---------- */
+.card button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 0.55rem;
+  border-radius: 8px;
+  background-color: #ff4d4f;
+}
+
+.card button:hover {
+  background-color: #d9363e;
+  box-shadow: 0 6px 14px rgba(255, 77, 79, 0.35);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 480px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input,
+  button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+h1 {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+form {
+  background-color: rgb(63, 63, 63);
+  padding: 1rem;
+}
+
+input {
+  background-color: grey;
+  color: white;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: grey;
+  color: white;
+}
